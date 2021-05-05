@@ -23,3 +23,22 @@ WHERE firstname = "Arielle";
 SELECT * 
 FROM student 
 WHERE lastname = "Dwight";
+
+
+-- Lister tous les élèves s'appelant Bronny Boys
+SELECT *
+FROM student
+WHERE firstname="Bronny" AND lastname="Boys";
+
+
+-- Lister tous les élèves crées après le 30 décembre 2017 
+-- et dont le project_id vaut 1
+SELECT * 
+FROM student 
+WHERE creation_date >= "2017-12-30" AND project_id=1;
+
+
+-- Dans project_tag, lister toutes les données ayant pour tag_id 1 ou 2
+SELECT * 
+FROM project_tag 
+WHERE tag_id=1 OR tag_id=2;
